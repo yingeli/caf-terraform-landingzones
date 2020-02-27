@@ -3,9 +3,9 @@ terraform {
     }
 }
 
-provider "azurerm" {
-  version = "<= 1.44"
-}
+# provider "azurerm" {
+#   version = "<= 1.44"
+# }
 
 data "azurerm_subscription" "current" {
 }
