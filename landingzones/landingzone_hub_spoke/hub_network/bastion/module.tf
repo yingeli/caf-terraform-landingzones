@@ -1,6 +1,5 @@
+/*
 module "bastion_pip" {
-  count = var.enable_bastion ? 1 : 0
-  
   source  = "aztfmod/caf-public-ip/azurerm"
   version = "2.0.0"
   # source = "git://github.com/aztfmod/terraform-azurerm-caf-public-ip?ref=2003-refresh"
@@ -33,8 +32,6 @@ resource "azurerm_bastion_host" "azurebastion" {
 }
 
 module "diagnostics_bastion" {
-  count = var.enable_bastion ? 1 : 0
-    
   source  = "aztfmod/caf-diagnostics/azurerm"
   version = "1.0.0"
 
@@ -44,3 +41,4 @@ module "diagnostics_bastion" {
     diagnostics_map                 = var.caf_foundations_accounting.diagnostics_map
     diag_object                     = var.bastion_config.diagnostics
 }
+*/
