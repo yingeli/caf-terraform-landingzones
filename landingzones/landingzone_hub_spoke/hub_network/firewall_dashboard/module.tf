@@ -1,7 +1,4 @@
 resource "azurerm_dashboard" "egress_dashboard" {
-  // Mooncake
-  count = 0
-  
   name                = var.name
   resource_group_name = var.rg
   location            = var.location

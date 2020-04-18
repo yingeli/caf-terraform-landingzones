@@ -88,6 +88,8 @@ module "az_firewall" {
   diagnostics_settings              = var.core_networking.az_fw_config.diagnostics
 }
 
+// Mooncake
+/*
 module "firewall_dashboard" {
   source = "./firewall_dashboard"
 
@@ -98,6 +100,7 @@ module "firewall_dashboard" {
   name        = basename(abspath(path.module))
   tags        = var.global_settings.tags_hub
 }
+*/
 
 module "firewall_rules" {
   source = "./firewall_rules"
